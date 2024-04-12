@@ -22,7 +22,7 @@ from lutris.database import games as games_db
 from lutris.database.services import ServiceGameCollection
 from lutris.exception_backstops import get_error_handler, register_error_handler
 from lutris.exceptions import EsyncLimitError
-from lutris.game import Game, GameSearch
+from lutris.game import Game
 from lutris.gui import dialogs
 from lutris.gui.addgameswindow import AddGamesWindow
 from lutris.gui.config.preferences_dialog import PreferencesDialog
@@ -38,6 +38,7 @@ from lutris.gui.widgets.gi_composites import GtkTemplate
 from lutris.gui.widgets.sidebar import LutrisSidebar
 from lutris.gui.widgets.utils import load_icon_theme, open_uri
 from lutris.runtime import ComponentUpdater, RuntimeUpdater
+from lutris.search import GameSearch
 from lutris.services.base import BaseService
 from lutris.services.lutris import LutrisService
 from lutris.util import datapath
