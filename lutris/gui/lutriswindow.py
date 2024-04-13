@@ -987,7 +987,7 @@ class LutrisWindow(Gtk.ApplicationWindow, DialogLaunchUIDelegate, DialogInstallU
         """Callback for the search input keypresses"""
         if self.search_timer_id:
             GLib.source_remove(self.search_timer_id)
-        self.filters["text"] = entry.get_text().lower().strip()
+        self.filters["text"] = entry.get_text().strip()
         self.search_timer_id = GLib.timeout_add(500, self.update_store)
 
     @GtkTemplate.Callback
